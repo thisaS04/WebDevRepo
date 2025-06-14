@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Atlantis-Life Under Water</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel ="stylesheet" href ="style.css">
   </head>
   <body class="table-bg">
 <!--Navigation Bar Creation-->
@@ -17,6 +18,7 @@
     <ul class="nav-Links">
       <li><a href="home.html" >Home</a></li>
       <li><a href="table.html" class="active"> Table</a></li>
+      <li><a href="userProfile.html">User Profile</a></li>
       <li><a href="feedback.html">Feedback</a></li>
       <li><a href="sitemap.html">Sitemap</a></li>
       <li><a href="team.html">Team</a></li>
@@ -27,9 +29,27 @@
 <div class="wrapper">
     <header>
         <h1>
-            Meet the Coral Crew: Ocean Architects of the Underwater World!
+            Meet the Coral Crew: Ocean Architects of the Underwater World! <!--The headline-->
         </h1>
     </header>
+
+
+    <section>
+        <p><h2><strong>What are Corals ?</strong></h2></p>
+
+        <p>Corals are tiny marine animals called polyps that live in colonies and form massive structures over time. They belong to a group called Cnidarians, which also includes jellyfish and sea anemones. Despite looking like colorful rocks or plants, corals are actually living organisms!</p>
+        
+        <p><h2><Strong>Reef Builders of the Ocean</Strong></h2></p>
+        <p>Hard corals, also called stony corals, build coral reefs by secreting calcium carbonate — the same material found in seashells. Over thousands of years, these structures form reefs, which serve as underwater cities for countless marine creatures.</p>
+        
+        <p><h2><Strong>Are Corals in danger ?</Strong></h2></p>
+        <p>Yes. Many coral species are endangered due to climate change, pollution, overfishing, and ocean acidification. Rising sea temperatures cause coral bleaching — a condition where corals expel their algae and turn white, leaving them weak and vulnerable.</p>
+
+
+        <p><h2><Strong>What can we do?</Strong></h2></p>
+        <p>We can help corals by reducing plastic use, choosing reef-safe sunscreen, supporting marine conservation, and spreading awareness about the importance of protecting coral reefs. Small actions on land can lead to big impacts in the ocean!</p>
+    </section>
+
 
 
 
@@ -60,7 +80,7 @@
                 <td>Hard Coral</td>
                 <td>Atlantic Ocean</td>
                 <td>Protects shorelines</td>
-                <td aria-label="Not Endangered">&#10007</td>
+                <td arial-label="Not Endangered">&#10007</td>
             </tr>
 
             <tr>
@@ -68,7 +88,7 @@
                 <td>Hard Coral</td>
                 <td>Western Atlantic</td>
                 <td>Vital for reef recovery</td>
-                <td aria-label="Endangered">&#10003</td>
+                <td arial-label="Endangered">&#10003</td>
                 
             </tr>
 
@@ -77,8 +97,8 @@
                 <td>Hydrocoral</td>
                 <td>tropical oceans</td>
                 <td>Protects reefs,but can sting humans</td>
-                <td aria-label="Not Endangered">&#10007</td>
-                <td></td>
+                <td arial-label="Not Endangered">&#10007</td>
+              
             </tr>
 
 
@@ -87,19 +107,75 @@
                 <td>Hard Coral</td>
                 <td>Indo-Pacific</td>
                 <td>One of few blue-colored corals, contains iron</td>
-                <td aria-label="Endangered">&#10003</td>
+                <td arial-label="Endangered">&#10003</td>
+            </tr>
+
+            <tr>
+                <td>Table Coral</td>
+                <td>Hard Coral</td>
+                <td>Indo-Pacific</td>
+                <td>Provides large surface habitat for reef organisms</td>
+                <td arial-label="Endangered">&#10003</td>
+              
+            </tr>
+
+
+            <tr>
+                <td>Sea Coral</td>
+                <td>Soft coral</td>
+                <td>Indo-pacific and Caribbean</td>
+                <td>Filters water,supports marine biodiversity</td>
+                <td arial-label="Not Endangered">&#10007</td>
+              
+            </tr>
+
+            <tr>
+                <td>Pillar Coral</td>
+                <td>Hard coral</td>
+                <td>Caribbean Sea</td>
+                <td>Provides vertical shelter for reef fish</td>
+                <td arial-label="Endangered">&#10003</td>
+              
             </tr>
         </tbody>
       </table>
 
     </section>
-</div>
 
+    <section class="imageGallery">
+      <h2 class="title-gallery">Coral Gallery</h2>
+      <div class="image-gallery">
+        <img src="https://i.ibb.co/fGkM7QzT/Elkhorn.jpg" alt="Elkhorn Coral">
+        <img src="https://i.ibb.co/23sSPZYt/Brain-Coral.jpg" alt="Brain Coral">
+        <img src="https://i.ibb.co/chyNBKhJ/Staghorn-Coral.jpg " alt="Staghorn Coral">
+        <img src="https://i.ibb.co/4wYhXbJ5/Fire-Coral.jpg" alt="Fire Coral">
+        <img src="https://i.ibb.co/BH6pn6dg/Blue-Coral.jpg " alt="Blue Coral">
+        <img src="https://i.ibb.co/KphwnBnq/Table-Coral.webp" alt="Table Coral">
+        <img src="https://i.ibb.co/RpRnMP3f/Sea-coral-reef.jpg" alt="Sea Coral">
+        <img src="https://i.ibb.co/2397YKJk/Pillar-Coral.jpg" alt="Pillar Coral">
+
+      </div>
+    </section>
+
+
+</div>
+<button id="topBtn" onClick="goToTop()">Go to Top</button>
  <!--Footer-->
   <footer>
   <p> <a href="pageEditor_st2.html">Page Editor</a>|<a href="contact.html">Contact Us</a></p>
   <p>&copy; 2025 Life Under Water. All rights reserved.</p>
   </footer>
+
+
+  <script>
+    window.onscroll=function(){
+        document.getElementById("topBtn").style.display=window.scrollY>100?"block":"none";
+};
+
+function goToTop(){
+    window.scrollTo({top:0, behavior:"smooth"});
+}
+  </script>
 
 
   </body>

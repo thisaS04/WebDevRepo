@@ -17,9 +17,11 @@
     <ul class="nav-Links">
       <li><a href="home.html" class="active">Home</a></li>
       <li><a href="table.html"> Table</a></li>
+      <li><a href="userProfile.html">User Profile</a></li>
       <li><a href="feedback.html">Feedback</a></li>
       <li><a href="sitemap.html">Sitemap</a></li>
       <li><a href="team.html">Team</a></li>
+
     </ul>
   </div>
 </nav>
@@ -69,6 +71,8 @@
     </h2>
   </section>
 
+
+  <button id="topBtn" onClick="goToTop()">Go to Top</button>
   <!--Footer-->
   <footer>
   <p> <a href="pageEditor.html">Page Editor</a>|<a href="contact.html">Contact Us</a></p>
@@ -76,6 +80,17 @@
   </footer>
 
 </div>
+
+
+  <script>
+    window.onscroll=function(){
+        document.getElementById("topBtn").style.display=window.scrollY>100?"block":"none";
+};
+
+function goToTop(){
+    window.scrollTo({top:0, behavior:"smooth"});
+}
+  </script>
 
   </body>
 
