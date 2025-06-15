@@ -57,12 +57,40 @@
   font-size:20px;
 }
 
+
+.logo-cell{
+  padding:20px;
+ 
+  vertical-align:middle;
+  min-width:150px;
+  text-align:center;
+}
+
+.logo-cell img{
+  width:80px;
+  height:auto;
+  margin-bottom:10px;
+}
+
 body.table-bg{
   background-image:url("https://i.ibb.co/8LL7JkyC/Corals.jpg");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
+}
 
+
+.table-link{
+  color:#bbfaf4;
+  text-decoration:underline;
+  font-weight:bold;
+  padding-top:5px;
+  transition:color 0.2s ease,transform 0.2s ease;
+}
+
+.table-link a:hover{
+  color:#022f75;
+  transform:translateY(-3px); /*lifting effect*/
 }
 
 #topBtn{
@@ -136,4 +164,35 @@ body.table-bg{
 
 .image-gallery img:hover::after {
   opacity: 1;
+}
+
+.toolTip{
+  position:relative;
+  display:inline-block;
+
+}
+
+
+.toolTip .tooltiptext{
+  visibility:hidden;
+  width:200px;
+  background-color:rgba(0,0,0,0.85);
+  color:#ffff;
+  text-align:center;
+  padding:8px;
+  border-radius:6px;
+  transition:opacity 0.4s ease;
+  font-size: 14px;
+  opacity:0;
+  bottom:110%;
+  left:50%;
+  transform:translateX(-50%);
+  position:absolute;
+  z-index:1;
+}
+
+
+.toolTip:hover .tooltiptext{
+  visibility:visible;
+  opacity:1;
 }
